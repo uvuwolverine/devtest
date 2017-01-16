@@ -6,8 +6,20 @@ $blue: #015F83;
 $red: #DF4664;
 $green: #6BA439;
 
-.blue{
+h4.blue{
   color: $blue;
+  }
+  
+h3.blue{
+  border-color: $blue;
+  }
+  
+h3.red{
+  border-color: $red;
+  }
+  
+h3.green{
+  border-color: $green;
   }
 
 *{
@@ -27,6 +39,12 @@ h1{
 h2{
   font-size: 32px;
   margin-bottom: 36px; 
+  line-height: 100%;
+  }
+  
+h3{ 
+  font-size: 18px;
+  margin-bottom: 10px; 
   line-height: 100%;
   }
   
@@ -113,6 +131,50 @@ article{
       span{
         font-size: 25px;
         font-weight: bold;
+        }
+      }
+    }      
+  }
+  
+.tiles{
+  h3{
+    display: block;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    margin-bottom: 36px;
+    font-weight: bold;
+    }
+  .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+    margin-bottom: 90px;
+    @media screen and (max-width: 600px){
+      flex-direction: column;
+      }
+    article{
+      width: 30%;
+      margin-right: 5%;
+      &:last-child{
+        margin-right: 0;
+        }
+      @media screen and (max-width: 600px){
+        width: 100%;
+        margin: 0;
+        }
+      img{
+        width: 100%;
+        height: calc(width*1.6);
+        margin-bottom: 10px;
+        }
+      h3{
+        border: none;
+        margin-bottom: 10px;
+        padding: 0;
         }
       }
     }
