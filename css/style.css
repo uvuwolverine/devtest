@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+.blue {
+  color: #015F83; }
+
 * {
   margin: 0;
   padding: 0;
@@ -86,5 +89,23 @@ article {
       article .insert figcaption span {
         font-size: 25px;
         font-weight: bold; }
+
+.videowrapper {
+  margin-top: 36px; }
+  .videowrapper video {
+    display: inline-block;
+    width: 30%;
+    transition: all .5s ease; }
+    .videowrapper video.full {
+      width: 100%; }
+  .videowrapper section {
+    display: inline-block;
+    float: right;
+    width: 60%;
+    margin-top: 0;
+    transition: all .5s ease; }
+    .videowrapper section.full {
+      width: 100%;
+      margin: 10px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+      function videoenlarge(vid){
+          vid.className="full";
+          var sec = vid.nextElementSibling;
+          vid.nextElementSibling.className="full";
+          console.log(sec);   
+        }
+    </script>
+  <title>Adam Christensen's Tile Test</title>
+  </head>
+  <body> 
+    <article class="videowrapper">
+      <video controls onplay="videoenlarge(this);"> 
+        <source src="video/sample.mp4" type="video/mp4">
+      </video>
+      <section>
+        <h4 class="blue">News Release</h4>
+        <h1>University of Utah Names Historic Building After President Monson</h1>
+        <p>A historic mansion in downtown Salt Lake City has been renamed the Thomas S. Monson Center after ther current presdient of the Church of Jesus Christ of Latter-Day Saints.</p>
+      </section>
+    </article>
+
+  </body>
+</html>
